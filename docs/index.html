@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Molecular Animation</title>
+<meta name="description" content="A curated list of software, data, tutorials and reading for animating molecules, cells and other biological structures.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://daniellachev.github.io/awesome-molecular-animation/">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #1c2126;
+  --muted: #5b6670;
+  --link: #0a5fa8;
+  --rule: #dde3e8;
+  --code-bg: #f2f5f7;
+  --accent: #007f9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111518;
+    --text: #e4e9ed;
+    --muted: #9aa6b0;
+    --link: #6cb8f0;
+    --rule: #2a3238;
+    --code-bg: #1b2227;
+    --accent: #1bbfe8;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 780px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; }
+h2 {
+  font-size: 1.3rem;
+  margin: 40px 0 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+p { margin: 0 0 12px; }
+.lead { font-size: 1.1rem; }
+a { color: var(--link); text-decoration: none; overflow-wrap: anywhere; }
+a:hover, a:focus { text-decoration: underline; }
+ul { margin: 0 0 12px; padding-left: 20px; }
+ul.entries li { margin: 0 0 8px; }
+ul.entries .name { font-weight: 600; }
+ul.entries .sep, ul.entries .desc { color: var(--text); }
+ul.toc { columns: 2; column-gap: 32px; }
+ul.toc li { break-inside: avoid; }
+code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+h1::after { content: ""; display: block; width: 48px; height: 3px; background: var(--accent); margin-top: 12px; }
+@media (max-width: 560px) {
+  main { padding-top: 24px; }
+  h1 { font-size: 1.6rem; }
+  ul.toc { columns: 1; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Awesome Molecular Animation</h1>
+<p class="lead">A curated list of software, data, tutorials and reading for animating molecules, cells and other biological structures.</p>
+<p>Entries are chosen for usefulness to scientists, educators and scientific animators. Prices and licenses change, so check each project's own page before you commit. Links were last checked on 2026-10-26.</p>
+<h2 id="contents">Contents</h2>
+<ul class="toc">
+<li><a href="#animation-and-rendering-tools">Animation and rendering tools</a></li>
+<li><a href="#structure-viewers-that-make-movies">Structure viewers that make movies</a></li>
+<li><a href="#blender-add-ons">Blender add-ons</a></li>
+<li><a href="#ai-tools">AI tools</a></li>
+<li><a href="#structure-and-data-sources">Structure and data sources</a></li>
+<li><a href="#tutorials-and-courses">Tutorials and courses</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#papers-and-talks">Papers and talks</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="animation-and-rendering-tools">Animation and rendering tools</h2>
+<ul class="entries">
+<li><a class="name" href="https://www.blender.org/">Blender</a><span class="sep"> - </span><span class="desc">Free, open-source 3D suite for modeling, animation and rendering, released under the GPL.</span></li>
+<li><a class="name" href="https://www.maxon.net/en/cinema-4d">Cinema 4D</a><span class="sep"> - </span><span class="desc">Commercial 3D animation and motion graphics software from Maxon, with the Redshift renderer included.</span></li>
+<li><a class="name" href="https://www.autodesk.com/products/maya/overview">Autodesk Maya</a><span class="sep"> - </span><span class="desc">Commercial 3D animation and VFX software, with free one-year education access for eligible students and teachers.</span></li>
+<li><a class="name" href="https://www.sidefx.com/products/houdini/">Houdini</a><span class="sep"> - </span><span class="desc">Procedural 3D and simulation software; the free Apprentice edition is for personal non-commercial projects.</span></li>
+<li><a class="name" href="https://clarafi.com/tools/mmaya/">Molecular Maya (mMaya)</a><span class="sep"> - </span><span class="desc">Free Maya plugin from Clarafi to import, model and animate molecular structures; its page lists support for Maya 2018 to 2020.</span></li>
+<li><a class="name" href="https://www.samson-connect.net/">SAMSON</a><span class="sep"> - </span><span class="desc">Molecular design platform from OneAngstrom whose Animator saves movies as MP4, GIF or WebM; free for academic and nonprofit non-commercial use.</span></li>
+<li><a class="name" href="https://github.com/mesoscope/cellpack">cellPACK</a><span class="sep"> - </span><span class="desc">Open-source (MIT) Python tool that packs 3D molecular models into mesoscale models of cells and viruses.</span></li>
+<li><a class="name" href="https://ccsb.scripps.edu/cellpaint/">CellPAINT</a><span class="sep"> - </span><span class="desc">Free web and desktop app for painting illustrations of cells and viruses from structure-based molecules; images may be used commercially.</span></li>
+<li><a class="name" href="https://ccsb.scripps.edu/illustrate/">Illustrate</a><span class="sep"> - </span><span class="desc">David Goodsell's program for non-photorealistic molecular illustrations, with a web interface for PDB entries.</span></li>
+</ul>
+<h2 id="structure-viewers-that-make-movies">Structure viewers that make movies</h2>
+<ul class="entries">
+<li><a class="name" href="https://www.cgl.ucsf.edu/chimerax/">UCSF ChimeraX</a><span class="sep"> - </span><span class="desc">Visualization and analysis of structures and cryo-EM maps, with a movie command for scripted movies; free for academic, government, nonprofit and personal use.</span></li>
+<li><a class="name" href="https://pymol.org/">PyMOL</a><span class="sep"> - </span><span class="desc">Molecular visualization with key-frame, scene, trajectory and morph movies; Incentive builds are licensed by Schrödinger.</span></li>
+<li><a class="name" href="https://github.com/schrodinger/pymol-open-source">PyMOL open source</a><span class="sep"> - </span><span class="desc">Source code of the open-source foundation of PyMOL.</span></li>
+<li><a class="name" href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a><span class="sep"> - </span><span class="desc">Visualization and analysis of large systems and simulation trajectories, with a Movie plugin; free of charge and includes source code.</span></li>
+<li><a class="name" href="https://molstar.org/">Mol*</a><span class="sep"> - </span><span class="desc">Open-source (MIT) web viewer used by the RCSB PDB, PDBe and AlphaFold DB that plays molecular dynamics trajectories.</span></li>
+<li><a class="name" href="https://molstar.org/mol-view-stories/">MolViewStories</a><span class="sep"> - </span><span class="desc">Builds interactive, step-by-step molecular stories on the web with Mol*.</span></li>
+<li><a class="name" href="https://www.yasara.org/">YASARA</a><span class="sep"> - </span><span class="desc">Molecular graphics, modeling and simulation for Windows, Linux, macOS and Android; YASARA View is free and can be extended with macros and movies.</span></li>
+<li><a class="name" href="https://www.ovito.org/">OVITO</a><span class="sep"> - </span><span class="desc">Visualization and analysis of particle-based simulations that renders animations of trajectories.</span></li>
+</ul>
+<h2 id="blender-add-ons">Blender add-ons</h2>
+<ul class="entries">
+<li><a class="name" href="https://extensions.blender.org/add-ons/molecularnodes/">Molecular Nodes</a><span class="sep"> - </span><span class="desc">Imports PDB entries, MD trajectories, cryo-EM and cryo-ET data and cellPACK ensembles into Blender with Geometry Nodes (GPL-3.0-or-later).</span></li>
+<li><a class="name" href="https://bradyajohnston.github.io/MolecularNodes/">Molecular Nodes documentation</a><span class="sep"> - </span><span class="desc">Installation, tutorials and node reference for Molecular Nodes.</span></li>
+<li><a class="name" href="https://extensions.blender.org/add-ons/atomic-blender-pdb-xyz/">Atomic Blender PDB/XYZ</a><span class="sep"> - </span><span class="desc">Blender extension that imports atoms from PDB and XYZ files.</span></li>
+</ul>
+<h2 id="ai-tools">AI tools</h2>
+<ul class="entries">
+<li><a class="name" href="https://animiotics.com/">Animiotics</a><span class="sep"> - </span><span class="desc">Web app that builds an editable 3D animation in Blender from a written description, using structures downloaded from the RCSB PDB; paid plans.</span></li>
+<li><a class="name" href="https://www.cgl.ucsf.edu/chimerax/docs/user/commands/mcp.html">ChimeraX mcp command</a><span class="sep"> - </span><span class="desc">Lets an MCP-capable AI assistant such as Claude Desktop, Cursor or VS Code with Copilot run ChimeraX commands.</span></li>
+<li><a class="name" href="https://github.com/ahujasid/mcp-for-blender">MCP for Blender</a><span class="sep"> - </span><span class="desc">Community plugin, formerly blender-mcp, that lets a language model control Blender; not made by Blender.</span></li>
+<li><a class="name" href="https://documentation.samson-connect.net/samson-release-notes/whats-new-in-samson-2023-r1/samson-ai/">SAMSON AI</a><span class="sep"> - </span><span class="desc">Assistant inside SAMSON that answers questions, runs commands and drafts Python scripts.</span></li>
+<li><a class="name" href="https://alphafoldserver.com/">AlphaFold Server</a><span class="sep"> - </span><span class="desc">Web service powered by AlphaFold 3 that predicts structures of proteins with DNA, RNA, ligands and ions; non-commercial use only.</span></li>
+<li><a class="name" href="https://github.com/jwohlwend/boltz">Boltz</a><span class="sep"> - </span><span class="desc">Open-source (MIT) models that predict biomolecular complex structures and binding affinity.</span></li>
+<li><a class="name" href="https://deepmind.google/models/veo/">Google Veo</a><span class="sep"> - </span><span class="desc">General text-to-video model with native audio; its clips are generated pixels, not built from molecular structures.</span></li>
+<li><a class="name" href="https://runway.com/">Runway</a><span class="sep"> - </span><span class="desc">General AI video and image generation platform; its outputs are not built from molecular structures.</span></li>
+</ul>
+<h2 id="structure-and-data-sources">Structure and data sources</h2>
+<ul class="entries">
+<li><a class="name" href="https://www.rcsb.org/">RCSB PDB</a><span class="sep"> - </span><span class="desc">wwPDB member that curates and annotates PDB data, with search, structure pages and downloads.</span></li>
+<li><a class="name" href="https://www.ebi.ac.uk/pdbe/">PDBe</a><span class="sep"> - </span><span class="desc">Protein Data Bank in Europe at EMBL-EBI, a founding member of the wwPDB.</span></li>
+<li><a class="name" href="https://pdbj.org/">PDBj</a><span class="sep"> - </span><span class="desc">Protein Data Bank Japan, which maintains the global PDB, BMRB and EMDB archives with tools for searching them.</span></li>
+<li><a class="name" href="https://www.wwpdb.org/">wwPDB</a><span class="sep"> - </span><span class="desc">Worldwide Protein Data Bank, the organization that manages the PDB archive and keeps it freely available.</span></li>
+<li><a class="name" href="https://alphafold.ebi.ac.uk/">AlphaFold DB</a><span class="sep"> - </span><span class="desc">Database of AlphaFold protein structure predictions, developed by Google DeepMind and EMBL-EBI.</span></li>
+<li><a class="name" href="https://www.ebi.ac.uk/emdb/">EMDB</a><span class="sep"> - </span><span class="desc">Electron Microscopy Data Bank, the public archive of cryo-EM volumes and representative tomograms.</span></li>
+<li><a class="name" href="https://pdb-ihm.org/">PDB-IHM</a><span class="sep"> - </span><span class="desc">Archive of structures from integrative or hybrid modeling, managed by the wwPDB.</span></li>
+<li><a class="name" href="https://modelarchive.org/">ModelArchive</a><span class="sep"> - </span><span class="desc">Repository that gives deposited theoretical models of macromolecular structures a stable DOI.</span></li>
+<li><a class="name" href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a><span class="sep"> - </span><span class="desc">Database of annotated 3D protein models from the SWISS-MODEL homology-modeling pipeline.</span></li>
+<li><a class="name" href="https://esmatlas.com/">ESM Metagenomic Atlas</a><span class="sep"> - </span><span class="desc">Open atlas of 617 million predicted metagenomic protein structures.</span></li>
+<li><a class="name" href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a><span class="sep"> - </span><span class="desc">Free chemistry database at NCBI, searchable by name, formula or structure; useful for ligands and small molecules.</span></li>
+<li><a class="name" href="https://www.uniprot.org/">UniProt</a><span class="sep"> - </span><span class="desc">Protein sequence and function database, useful for checking what a protein does before you animate it.</span></li>
+<li><a class="name" href="https://mddbr.eu/">MDDB</a><span class="sep"> - </span><span class="desc">Molecular Dynamics Data Bank, a European repository for biosimulation data.</span></li>
+<li><a class="name" href="https://www.gpcrmd.org/">GPCRmd</a><span class="sep"> - </span><span class="desc">Online platform for visualizing and analyzing GPCR molecular dynamics simulations.</span></li>
+<li><a class="name" href="https://3d.nih.gov/">NIH 3D</a><span class="sep"> - </span><span class="desc">Portal to download, share and create bioscientific and medical 3D models for printing and interactive visualization.</span></li>
+<li><a class="name" href="https://lifesciencedb.jp/bp3d/">BodyParts3D</a><span class="sep"> - </span><span class="desc">3D models of human anatomy that you can select by part and embed or download.</span></li>
+</ul>
+<h2 id="tutorials-and-courses">Tutorials and courses</h2>
+<ul class="entries">
+<li><a class="name" href="https://pdb101.rcsb.org/motm/motm-by-date">PDB-101 Molecule of the Month</a><span class="sep"> - </span><span class="desc">Illustrated monthly explanations of molecules from the RCSB PDB, a good place to choose structures.</span></li>
+<li><a class="name" href="https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/introduction">Guide to Understanding PDB Data</a><span class="sep"> - </span><span class="desc">PDB-101 guide to coordinates, resolution, biological assemblies and other data to check before animating.</span></li>
+<li><a class="name" href="https://www.cgl.ucsf.edu/chimerax/data/movies-may2019/moviemaking.html">Making Molecular Movies in ChimeraX</a><span class="sep"> - </span><span class="desc">Tom Goddard's movie-making tutorial for ChimeraX.</span></li>
+<li><a class="name" href="https://www.cgl.ucsf.edu/chimerax/tutorials.html">ChimeraX tutorials</a><span class="sep"> - </span><span class="desc">Official ChimeraX tutorials, including movies for cryo-EM and light microscopy.</span></li>
+<li><a class="name" href="https://rbvi.github.io/chimerax-recipes/">ChimeraX Recipes</a><span class="sep"> - </span><span class="desc">Examples of ChimeraX commands and Python scripts, including movie recording.</span></li>
+<li><a class="name" href="https://pymol.org/tutorials/moviemaking/">PyMOL Moviemaking Tutorial</a><span class="sep"> - </span><span class="desc">Camera key frames, scenes, object motion, trajectories and morphing in PyMOL.</span></li>
+<li><a class="name" href="https://pymolwiki.org/index.php/MovieSchool">PyMOL Wiki MovieSchool</a><span class="sep"> - </span><span class="desc">Community course on making movies in PyMOL.</span></li>
+<li><a class="name" href="https://www.ks.uiuc.edu/Research/vmd/plugins/vmdmovie/">VMD Movie Plugin</a><span class="sep"> - </span><span class="desc">Documentation for rotation and trajectory movies in VMD.</span></li>
+<li><a class="name" href="https://www.ks.uiuc.edu/Training/Tutorials/">TCBG tutorials</a><span class="sep"> - </span><span class="desc">Tutorials for VMD and related software from the University of Illinois group that makes it.</span></li>
+<li><a class="name" href="https://bradyajohnston.github.io/MolecularNodes/tutorials/index.html">Molecular Nodes tutorials</a><span class="sep"> - </span><span class="desc">Written tutorials covering installation, the Blender interface, fetching from the PDB, selections and trajectories.</span></li>
+<li><a class="name" href="https://youtube.com/c/bradyjohnston">Brady Johnston on YouTube</a><span class="sep"> - </span><span class="desc">Channel of the Molecular Nodes author, linked from its documentation.</span></li>
+<li><a class="name" href="https://docs.blender.org/manual/en/latest/">Blender Manual</a><span class="sep"> - </span><span class="desc">Official reference manual for Blender.</span></li>
+<li><a class="name" href="https://clarafi.com/">Clarafi</a><span class="sep"> - </span><span class="desc">Online courses in scientific visualization, including Molecular Maya, Maya dynamics and storyboarding.</span></li>
+<li><a class="name" href="https://animiotics.com/blog/chimerax-morph-animate-two-protein-structures/">ChimeraX Morph: Animate Two Protein Structures</a><span class="sep"> - </span><span class="desc">Tested ChimeraX recipe for morphing between two adenylate kinase structures and checking the generated frames (Animiotics blog).</span></li>
+<li><a class="name" href="https://animiotics.com/blog/molecular-dynamics-movies-report-simulation-time-correctly/">Molecular Dynamics Movies: Report Simulation Time Correctly</a><span class="sep"> - </span><span class="desc">How to keep simulation time and video frame rate apart in MD movies and captions (Animiotics blog).</span></li>
+</ul>
+<h2 id="communities">Communities</h2>
+<ul class="entries">
+<li><a class="name" href="https://mail.cgl.ucsf.edu/mailman/archives/list/chimerax-users@cgl.ucsf.edu/">ChimeraX-users mailing list</a><span class="sep"> - </span><span class="desc">ChimeraX user mailing list and searchable archive.</span></li>
+<li><a class="name" href="https://sourceforge.net/projects/pymol/lists/pymol-users">pymol-users mailing list</a><span class="sep"> - </span><span class="desc">PyMOL user mailing list.</span></li>
+<li><a class="name" href="https://www.ks.uiuc.edu/Research/vmd/mailing_list/">VMD-L</a><span class="sep"> - </span><span class="desc">VMD user mailing list.</span></li>
+<li><a class="name" href="https://discord.gg/fvw6vT3vY9">Molecular Nodes Discord</a><span class="sep"> - </span><span class="desc">Chat server linked from the Molecular Nodes documentation.</span></li>
+<li><a class="name" href="https://github.com/BradyAJohnston/MolecularNodes/discussions">Molecular Nodes discussions</a><span class="sep"> - </span><span class="desc">Questions and ideas about Molecular Nodes on GitHub.</span></li>
+<li><a class="name" href="https://github.com/molstar/molstar/discussions">Mol* discussions</a><span class="sep"> - </span><span class="desc">Questions and ideas about Mol* on GitHub.</span></li>
+<li><a class="name" href="https://blender.stackexchange.com/">Blender Stack Exchange</a><span class="sep"> - </span><span class="desc">Question and answer site for Blender users.</span></li>
+<li><a class="name" href="https://ami.org/">Association of Medical Illustrators</a><span class="sep"> - </span><span class="desc">Global community of medical illustrators, with a directory of professional members.</span></li>
+<li><a class="name" href="https://vizbi.org/">VIZBI</a><span class="sep"> - </span><span class="desc">International community of scientists, illustrators and designers who visualize biological data, with an annual conference since 2010.</span></li>
+</ul>
+<h2 id="papers-and-talks">Papers and talks</h2>
+<ul class="entries">
+<li><a class="name" href="https://doi.org/10.1002/pro.4792">UCSF ChimeraX: Tools for structure building and analysis</a><span class="sep"> - </span><span class="desc">Meng et al., Protein Science, 2023.</span></li>
+<li><a class="name" href="https://doi.org/10.1002/pro.3235">UCSF ChimeraX: Meeting modern challenges in visualization and analysis</a><span class="sep"> - </span><span class="desc">Goddard et al., Protein Science, 2018.</span></li>
+<li><a class="name" href="https://doi.org/10.1093/nar/gkab314">Mol* Viewer: modern web app for 3D visualization and analysis of large biomolecular structures</a><span class="sep"> - </span><span class="desc">Sehnal et al., Nucleic Acids Research, 2021.</span></li>
+<li><a class="name" href="https://doi.org/10.1016/0263-7855(96)00018-5">VMD: Visual molecular dynamics</a><span class="sep"> - </span><span class="desc">Humphrey, Dalke and Schulten, Journal of Molecular Graphics, 1996.</span></li>
+<li><a class="name" href="https://doi.org/10.1038/nmeth.3204">cellPACK: a virtual mesoscope to model and visualize structural systems biology</a><span class="sep"> - </span><span class="desc">Johnson et al., Nature Methods, 2015.</span></li>
+<li><a class="name" href="https://doi.org/10.1093/bioinformatics/bty968">BlendMol: advanced macromolecular visualization in Blender</a><span class="sep"> - </span><span class="desc">Durrant, Bioinformatics, 2019.</span></li>
+<li><a class="name" href="https://doi.org/10.1016/j.cell.2008.06.013">Molecular movies... coming to a lecture near you</a><span class="sep"> - </span><span class="desc">McGill, Cell, 2008.</span></li>
+<li><a class="name" href="https://doi.org/10.1016/j.tcb.2010.08.005">Animating the model figure</a><span class="sep"> - </span><span class="desc">Iwasa, Trends in Cell Biology, 2010.</span></li>
+<li><a class="name" href="https://doi.org/10.1187/cbe.11-08-0071">Visualizing protein interactions and dynamics: evolving a visual language for molecular animation</a><span class="sep"> - </span><span class="desc">Jenkinson and McGill, CBE Life Sciences Education, 2012.</span></li>
+<li><a class="name" href="https://doi.org/10.1016/j.sbi.2015.03.015">Bringing macromolecular machinery to life using 3D animation</a><span class="sep"> - </span><span class="desc">Iwasa, Current Opinion in Structural Biology, 2015.</span></li>
+<li><a class="name" href="https://doi.org/10.1111/cgf.13072">Visualization of biomolecular structures: state of the art revisited</a><span class="sep"> - </span><span class="desc">Kozlíková et al., Computer Graphics Forum, 2017.</span></li>
+<li><a class="name" href="https://doi.org/10.1016/j.jmb.2018.06.009">From atoms to cells: using mesoscale landscapes to construct visual narratives</a><span class="sep"> - </span><span class="desc">Goodsell, Franzen and Herman, Journal of Molecular Biology, 2018.</span></li>
+<li><a class="name" href="https://doi.org/10.1016/j.str.2019.09.001">Molecular graphics: bridging structural biologists and computer scientists</a><span class="sep"> - </span><span class="desc">Martinez et al., Structure, 2019.</span></li>
+<li><a class="name" href="https://www.ted.com/talks/drew_berry_animations_of_unseeable_biology">Drew Berry: Animations of unseeable biology</a><span class="sep"> - </span><span class="desc">TED talk showing scientifically accurate animations of processes inside cells.</span></li>
+<li><a class="name" href="https://www.ted.com/talks/janet_iwasa_how_animations_can_help_scientists_test_a_hypothesis">Janet Iwasa: How animations can help scientists test a hypothesis</a><span class="sep"> - </span><span class="desc">TED talk on using 3D animation to explore scientific hypotheses.</span></li>
+<li><a class="name" href="https://www.wehi.edu.au/wehi-tv/">WEHI.TV</a><span class="sep"> - </span><span class="desc">3D animations of medical research from the Walter and Eliza Hall Institute.</span></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Suggestions are welcome. Read <a href="https://github.com/daniellachev/awesome-molecular-animation/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> first, then open a pull request on <a href="https://github.com/daniellachev/awesome-molecular-animation">GitHub</a>.</p>
+<h2 id="license">License</h2>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>. To the extent possible under law, the contributors have waived all copyright and related rights to this list.</p>
+</main>
+</body>
+</html>
